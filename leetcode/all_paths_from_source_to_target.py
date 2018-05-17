@@ -31,14 +31,14 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         def dfs(cur, path):
-            print(cur,path)
+            #print(cur,path)
             if cur == len(graph) - 1: 
-                print(path)
+                #print(path)
                 res.append(path)
             else:
-                print(graph[cur])
+                #print(graph[cur])
                 for i in graph[cur]: 
-                    print(i)
+                    #print(i)
                     dfs(i, path + [i])
             
         res = []
